@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MyDocs</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="resources/logo.png" rel="icon">
+	<script src="scripts/utils.js" charset="utf-8" defer></script>
+	<script src="scripts/register.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div></div>
+			<h1>MyDocs - Register</h1>
+			<div></div>
+		</nav>
+	</header>
+	<main class="center">
+		<form action="#">
+			<fieldset>
+				<legend>Register</legend>
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="email" name="email" placeholder="E-mail" required>
+				<input type="password" name="password1" placeholder="Password" required>
+				<input type="password" name="password2" placeholder="Repeat password" required>
+				<button id="registerButton">REGISTER</button>
+			</fieldset>
+		</form>
+		<p id= "errorMessage" class="warning"></p>
+		<p>Already have an account?</p>
+		<a href="login.html"><button>Go to Log In</button></a>
+	</main>
+</body>
+</html>

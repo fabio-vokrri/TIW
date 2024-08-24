@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MyDocs</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="resources/logo.png" rel="icon">
+	<script src="scripts/utils.js" charset="utf-8" defer></script>
+	<script src="scripts/login.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div></div>
+			<h1>MyDocs - Login</h1>
+			<div></div>
+		</nav>
+	</header>	
+	<main class="center">
+		<form action="#">
+			<fieldset>
+				<legend>Log In</legend>
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<button id="loginButton">LOG IN</button>
+			</fieldset>
+		</form>
+		
+		<p id="errorMessage" class="warning"></p>
+		<p>New here?</p>
+		<a href="register.html"><button>Go to Registration</button></a>
+	</main>
+</body>
+</html>

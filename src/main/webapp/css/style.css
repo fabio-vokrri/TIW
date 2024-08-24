@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+	 --primary: #102C53;
+	 --warning: #b41a1a;
+	 --warning-background: rgba(180, 26, 26, 0.5);
+}
+
+* {
+  	font-family: "Manrope", "Roboto Condensed", sans-serif;
+  	min-width: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+ 	align-items: center;
+  	justify-content: center;
+}
+
+h1{
+	font-size: 2em;
+}
+
+main {
+	width: 40vw;
+	padding: 1rem;
+	margin-top: 5rem;
+}
+
+header {
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	width: 100vw;
+	margin: 0;
+	background-color: var(--primary);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 40%;
+	height:100%;
+	margin: 0 auto;
+	background-color: var(--primary);
+}
+
+nav > h1 {
+	color: white;
+}
+
+dialog {
+	border: 1px solid var(--primary);
+	padding: 2rem;
+}
+
+form {
+	display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin-top: 2rem;
+}
+
+fieldset {
+	display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+    border: 1px solid var(--primary);
+}
+
+legend {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+p {
+	text-align: justify;
+	word-wrap:break-word;
+}
+
+button {
+	background-color: var(--primary);
+	color: white;
+	border: none;
+	padding: 0.5rem;	
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input, select, option {
+	background-color: white;
+	border: 1px solid var(--primary);
+	padding: 0.5rem;
+}
+
+textarea {
+	background-color: white;
+	border: 1px solid var(--primary);
+	padding: 0.5rem;
+	resize: none;
+}
+
+/*disables yellowing on auto-complete*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.fab {
+	width: 56px;
+    height: 56px;
+    border-radius: 50%;
+	position: fixed;
+	z-index: 2;
+	margin: 4rem;	
+	font-size: 2rem;
+	bottom: 1rem;
+}
+
+.right {	
+	right: 1rem;
+}
+
+.left {
+	left: 1rem;
+}
+
+.secondary {
+	background-color: white;
+	color: var(--primary);
+	border: 1px solid var(--primary);
+	padding: 0.5rem;	
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.deleteZone {
+	background-color: var(--warning-background);
+	color: var(--warning);
+	border: 2px solid var(--warning);
+	border-style: dashed;
+	padding: 0rem 4rem;
+	position: fixed;
+	z-index: 2;
+	margin: 4rem;
+	bottom: 1rem;
+}
+
+.two-colums {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.center {
+	width: 40vw;
+	padding: 1rem;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+ 	align-items: center;
+  	justify-content: center;
+}
+
+.warning {
+	color: var(--warning);
+}
+
+.hidden {
+	display: none;
+}

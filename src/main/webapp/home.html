@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MyDocs</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="resources/logo.png" rel="icon">
+	<script src="scripts/utils.js" charset="utf-8" defer></script>
+	<script src="scripts/home.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<button id="backButton" class="hidden">BACK</button>
+			<h1 id="headerTitle"></h1>
+			<button id="logoutButton">LOGOUT</button>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="homePage">
+			<h2 id="homeTitle"></h2>
+			<ul id="rootFolder">
+			</ul>
+		</section>
+		
+		<section id="documentPage" class="hidden">
+			<h2 id="documentDate"></h2>
+			<br>
+			<p id="documentContent"></p>
+		</section>
+		
+		<dialog id="addFolderDialog">
+			<h2 id="dialogTitle-fold"></h2>
+			<form action="#">
+				<fieldset>
+					<legend>Create Folder</legend>
+					<input type="text" name="name" placeholder="Folder name" required>
+					<input type="hidden" name="parentId" id="parentIdInput-fold">
+					<button id="addFolderButton">Add Folder</button>
+				</fieldset>
+			</form>
+		</dialog>
+		
+		<dialog id="addDocumentDialog">
+			<h2 id="dialogTitle-doc"></h2>
+			<form action="#">
+				<fieldset>
+					<legend>Create Document</legend>
+					<input type="text" name="name" placeholder="Document name" required>
+					<input type="text" name="type" placeholder="Document type" required>
+					<textarea name="summary" placeholder="Document Summary" required></textarea>
+					<input type="hidden" name="parentId" id="parentIdInput-doc">
+					<button id="addDocumentButton">Add Document</button>
+				</fieldset>
+			</form>
+		</dialog>
+	</main>
+	
+	<dialog id="errorDialog">
+		<h2 class="warning">SOMETHING WENT WRONG</h2>
+		<p id="errorMessage"></p>
+		<button id="errorDialogButton">OK</button>
+	</dialog>
+	
+	<dialog id="deleteDialog">
+		<h2 id="deleteDialogTitle"></h2>
+		<div class="two-columns">
+			<button id="cancelButton" class="secondary">CANCEL</button>
+			<button id="deleteButton">DELETE</button>	
+		</div>		
+	</dialog>
+	
+	<div id="deleteZone" class="deleteZone left"><p>DELETE</p></div>
+	<button class="fab right" id="addToRoot">+</button>
+</body>
+</html>
