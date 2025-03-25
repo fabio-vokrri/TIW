@@ -4,7 +4,7 @@ Progetto del corso di Tecnologie Informatiche per il Web (a.a. 2024).
 
 Il progetto consiste nell'implementazione di un sito web full stack per la gestione di documenti, che rispetti la seguente specifiche:
 
-_L’applicazione supporta registrazione e login mediante una pagina pubblica con opportune form. La registrazione di un utente richiede l’inserimento di username, indirizzo di email e password e controlla la validità sintattica dell’indirizzo di email e l’uguaglianza tra i campi “password” e “ripeti password”. La registrazione controlla l’unicità dello username.  
+L’applicazione supporta registrazione e login mediante una pagina pubblica con opportune form. La registrazione di un utente richiede l’inserimento di username, indirizzo di email e password e controlla la validità sintattica dell’indirizzo di email e l’uguaglianza tra i campi “password” e “ripeti password”. La registrazione controlla l’unicità dello username.  
 
 Una cartella ha un proprietario, un nome e una data di creazione e può contenere altre cartelle e/o documenti. Un documento ha un proprietario, nome, una data di creazione, un sommario e un tipo.
 
@@ -18,6 +18,6 @@ Ogni pagina, tranne la HOME PAGE, contiene un collegamento per tornare alla pagi
 
 Una pagina GESTIONE CONTENUTI raggiungibile dalla HOME PAGE permette all’utente di creare una cartella di primo livello, una cartella all’interno di una cartella esistente e un documento all’interno di una cartella.
 
-L’applicazione non richiede la gestione dell’upload dei documenti._
+L’applicazione non richiede la gestione dell’upload dei documenti.
 
 Per maggiori informazioni sulla specifica e sulle scelte implementative, consultare la [documentazione](documentation.pdf).
